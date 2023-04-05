@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+#wrapper {
+  margin: auto;
+  min-height: 200vh;
+  min-width: 350px;
+  font-family: tahoma, sans-serif;
+  box-shadow: 1px 6px 40px -10px #000000;
+  background-color: black;
+  border: 0.1px solid black;
+  margin: 0px;
+  border-top: none;
+  border-bottom: none;
+}
+
+#wrapper-low {
+  min-height: 200vh;
+  margin: auto;
+  height: 100%;
+}
+
+header {
+  margin: 0px;
+  padding: 20px 0px;
+  border-bottom: solid 0.7px white;
+}
+
+body {
+  color: white;
+  word-wrap: break-word;
+  margin: 0px;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: "New Rocker", cursive;
+  font-size: 4.5rem;
+  margin: 0px;
+  padding: 20px 5px;
+  color: rgb(214, 64, 64);
+  border-bottom: white;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin: 2px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 5px 0px;
+  margin-bottom: 25px;
+}
+
+p {
+  margin: 0px;
+  font-family: "Righteous", cursive;
+  font-size: 1.2rem;
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  padding-bottom: 50px;
+  border-top: solid rgb(214, 64, 64);
+  border-bottom: solid rgb(214, 64, 64);
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+#theme {
+  display: block;
+  border: 0.1px solid rgb(214, 64, 64);
+  padding: 10px;
+  margin: 25px;
+  margin-left: 0px;
+}
+
+#heading {
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+}
+
+#versus {
+  padding-left: 10px;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  border: solid rgb(214, 64, 64);
+  background-image: url("../images/city-background.jpg");
+  background-size: cover;
+  background-position: 70%;
+  background-repeat: no-repeat;
+}
+
+#diceroll {
+  width: 70px;
+}
+
+#game {
+  display: none;
+}
+
+#dice {
+  margin: 5px;
+  padding: 25px;
+  border: dotted black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#game {
+  border: 0.1px solid white;
+  padding: 0px 50px;
+  padding-bottom: 20px;
+  margin: 20px 40px;
+}
+
+#dice img {
+  width: 30px;
+  margin-bottom: 0px;
+}
+
+#computer-img, #player-img {
+  height: 80px;
+}
+
+#player h2 {
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 2pt;
+}
+
+#computer h2 {
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 2pt;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "Righteous", cursive;
+  background-color: black;
+  border: 0.5px solid white;
+  color: white;
+}
+
+.default {
+  background-color: black;
+  border: 0.5px solid white;
+  color: white;
+  opacity: 50%;
+}
+
+.default:hover {
+  background-color: black;
+  border: 0.5px solid white;
+  color: white;
+  opacity: 50%;
+}
+
+input:hover {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+#selection {
+  padding: 15px;
+  margin: 5px;
+  border: solid rgb(214, 64, 64);
+}
+
+select {
+  font-family: "Righteous", cursive;
+  font-size: 1rem;
+  padding: 0px;
+  background-color: black;
+  border: 0.5px solid white;
+  border-radius: 2pt;
+  color: white;
+  padding: 10px;
+}
+
+#start {
+  font-size: 1rem;
+  width: 100%;
+  margin: 15px 0px;
+  background-color: black;
+  border: 0.5px solid white;
+  color: white;
+  padding: 10px;
+}
+
+select:hover {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+#start:hover {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+select:active, #start:active, input:active {
+  opacity: 50%;
+}
+
+#roll, #restart {
+  font-size: 1rem;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pop-up {
+  display: none;
+  font-size: 1.5rem;
+  margin: 25px;
+  border: solid 0.1px rgb(214, 64, 64);
+  padding: 10px;
+  background-color: black;
+  color: white;
+  z-index: 9000;
+}
+
+#rules {
+  border: solid rgb(214, 64, 64);
+  padding: 5px;
+  margin: 30px 0px;
+}
+
+#rules h2 {
+  text-align: left;
+}
+
+#rules p {
+  padding: 5px;
+}
+
+footer {
+  border-top: 0.1px solid white;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+a {
+  padding: 8px;
+  background-color: black;
+  border: 0.1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+@media (min-width: 650px) {
+  #rules {
+    padding: 20px;
+  }
+  #selection {
+    margin: 30px 40px;
+    padding: 20px 40px;
+  }
+  #theme-box {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  #heading {
+    font-size: 2.5rem;
+  }
+  #box1 {
+    padding: 70px 0px;
+    border: solid rgb(214, 64, 64);
+    border-left: none;
+    border-right: none;
+  }
+  #versus {
+    border-right: none;
+    border-left: none;
+  }
+  #dice img {
+    width: 65px;
+  }
+  #computer-img, #player-img {
+    height: 160px;
+  }
+  #versus {
+    display: flex;
+    padding: 15px 70px;
+  }
+  #computer h2, #computer h3 {
+    text-align: right;
+  }
+  #computer-img {
+    transform: scaleX(-1);
+  }
+  #select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header {
+    padding: 0px;
+  }
+  input {
+    font-size: 1.5rem;
+    margin: 5px 45px;
+  }
+  #start {
+    font-size: 1.5rem;
+  }
+  select {
+    font-size: 1.3rem;
+  }
+  #roll, #restart {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 800px) {
+  #box1 {
+    margin: 80px;
+    margin-bottom: 90px;
+    padding: 70px 0px;
+    border: solid rgb(214, 64, 64);
+  }
+  h1 {
+    font-size: 5.9rem;
+  }
+  #game {
+    padding: 30px 15px;
+    margin: 30px 40px;
+  }
+}
+@media (min-width: 1000px) {
+  #wrapper {
+    margin: 0px 100px;
+    border-right: 0.1px solid rgb(214, 64, 64);
+    border-left: 0.1px solid rgb(214, 64, 64);
+    border-bottom: 0.1px solid rgb(214, 64, 64);
+  }
+}

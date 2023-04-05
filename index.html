@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final-COMP2132</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link href="../css/main.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="../scripts/versus.js" defer></script>
+        <script src="../scripts/select.js" defer></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header> 
+                <h1>Fighter Dice</h1>
+                <h2>created by NAHOM BERHE</h2>
+            </header>                    
+
+            
+
+            <main>
+
+                <audio id="song" hidden="true" src="../music/backgroundmusic1.mp3" controls></audio>
+                <audio id="song2" hidden="true" src="../music/backgroundmusic2.mp3" controls></audio>
+                <audio id="song3" hidden="true" src="../music/backgroundmusic3.mp3" controls></audio>
+
+                <div id="box1">
+
+                    <h2 id="heading">CHARACTER SELECT</h2>
+
+                    <div id="versus">
+                        
+                        <div id="player">
+                            <img id="player-img" src="../images/iron-man-idle.gif" alt="iron-man">
+                            <h2>Player: <br>IRON-MAN</h2>                            
+                        </div>
+
+                        <div id="computer">
+                            <img id="computer-img" src="../images/captain-america-idle.gif" alt="captain-america">
+                            <h2>Computer: <br>CAPTAIN AMERICA</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="selection">
+
+                        <div id="theme-box">
+                            <select name="theme" id="theme">
+                                <option value="1" selected>City</option>
+                                <option value="2">Palace</option>
+                                <option value="3">Sunset</option>
+                                <option value="4">Airport</option>
+                                <option value="5">Chinatown</option>
+                                <option value="6">Vegas</option>
+                            </select>
+                        </div>
+
+                        <div id="select">
+                            <select id="select-player" name="select Player">
+                                <option value="1" selected>Iron-Man</option>
+                                <option value="2">Captain-America</option>
+                                <option value="3">Hulk</option>
+                                <option value="4">Thanos</option>
+                                <option value="5">Venom</option>
+                                <option value="6">Balrog</option>
+                                <option value="7">Cable</option>
+                                <option value="8">Colossus</option>
+                                <option value="9">Cyclops</option>
+                                <option value="10">Wolverine</option>
+                                <option value="11">Spider-Man</option>
+                                <option value="12">Ken</option>
+                                <option value="13">Ryu</option>
+                                <option value="14">Dr-Doom</option>
+                                <option value="15">Juggernaut</option>
+                                <option value="16">Magneto</option>
+                                <option value="17">Sabretooth</option>
+                                <option value="18">Blanka</option>
+                                <option value="19">Guile</option>
+                                <option value="20">Zangief</option>
+                            </select>
+
+                            <h4>VS</h4>
+                            
+                            <select id="select-computer" name="select Computer">
+                                <option value="1">Iron-Man</option>
+                                <option value="2" selected>Captain-America</option>
+                                <option value="3">Hulk</option>
+                                <option value="4">Thanos</option>
+                                <option value="5">Venom</option>
+                                <option value="6">Balrog</option>
+                                <option value="7">Cable</option>
+                                <option value="8">Colossus</option>
+                                <option value="9">Cyclops</option>
+                                <option value="10">Wolverine</option>
+                                <option value="11">Spider-Man</option>
+                                <option value="12">Ken</option>
+                                <option value="13">Ryu</option>
+                                <option value="14">Dr-Doom</option>
+                                <option value="15">Juggernaut</option>
+                                <option value="16">Magneto</option>
+                                <option value="17">Sabretooth</option>
+                                <option value="18">Blanka</option>
+                                <option value="19">Guile</option>
+                                <option value="20">Zangief</option>
+                            </select>
+
+                        </div>
+
+                        <input type="button" value="Start Match" id="start">
+
+                        <div id="rules">
+                            <h2>Rules: </h2>
+                            <p> Fighter Dice is a game of dice against a computer. <br><br>
+                                You will pick your respective characters, select a map, and begin. <br><br>
+                                Two dice are rolled each, for a combined sum each round. <br><br>
+                                If the player rolls a 1 in either die, an automatic 0 is given for that round. <br><br>
+                                If two of the same dice are rolled, the total for that round is doubled. <br><br>
+                                All rules apply to the computer as well.<br><br>
+                                Three rounds, highest total score at the end wins.</p>
+                        </div>
+
+                    </div>
+
+                    <div id="pop-up">
+                    </div>
+
+                    <div id="game">
+
+                        <div id="buttons">
+                            <input type="button" id="roll" Value="Roll Dice">
+                            <input type="button" id="restart" Value="New Match">
+                        </div>
+
+                        <div id="dice">
+
+                            <div id="player-dice">
+                                
+                                <img id="player-die1" src="../images/dice.png" alt="dice">
+                                <img id="player-die2" src="../images/dice.png" alt="dice">
+                                <h4 id="player-values">Values: </h4>
+                                <h3 id="player-roll">Current Roll: </h3>
+                                <h3 id="player-total">Total Score: </h3>
+                            </div>
+
+                            <h3 id="roll-num">ROUND: 0/3</h3>
+
+                            <div id="computer-dice">
+                                
+                                <img id="computer-die1" src="../images/dice.png" alt="dice">
+                                <img id="computer-die2" src="../images/dice.png" alt="dice">
+                                <h4 id="computer-values">Values: </h4>
+                                <h3 id="computer-roll">Current Roll: </h3>
+                                <h3 id="computer-total">Total Score: </h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>   
+                
+                <footer>
+                <h3><a href="#wrapper">TOP</a></h3>
+            </footer>
+
+            </main>
+
+            
+        </div>  
+    </body>
+</html>
