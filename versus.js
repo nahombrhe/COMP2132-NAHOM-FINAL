@@ -73,12 +73,12 @@ function defaultState(){
     $("#player h2").css(`display`, `block`)
     $("#computer h2").css(`display`, `block`)
 
-    $playerDie1.prop(`src`, "../images/dice.png")
-    $playerDie2.prop(`src`, "../images/dice.png")
+    $playerDie1.prop(`src`, "./images/dice.png")
+    $playerDie2.prop(`src`, "./images/dice.png")
     $playerValues.html(`Values: `)
 
-    $computerDie1.prop(`src`, "../images/dice.png")
-    $computerDie2.prop(`src`, "../images/dice.png")
+    $computerDie1.prop(`src`, "./images/dice.png")
+    $computerDie2.prop(`src`, "./images/dice.png")
     $computerValues.html(`Values: `)
 
     $playerRoll.html(`Current Roll: 0`)
@@ -113,10 +113,10 @@ function rollDice(){
     let dieVal3 = Math.floor(Math.random() * 6) + 1;
     let dieVal4 = Math.floor(Math.random() * 6) + 1;
 
-    let die1    = `../images/dice${dieVal1}.png`
-    let die2    = `../images/dice${dieVal2}.png`
-    let die3    = `../images/dice${dieVal3}.png`
-    let die4    = `../images/dice${dieVal4}.png`
+    let die1    = `./images/dice${dieVal1}.png`
+    let die2    = `./images/dice${dieVal2}.png`
+    let die3    = `./images/dice${dieVal3}.png`
+    let die4    = `./images/dice${dieVal4}.png`
 
     playerVal1 = dieVal1
     playerVal2 = dieVal2
@@ -233,9 +233,9 @@ function playerActive(){
     let i = $( "#select-player option:selected" ).text();
     let input = i.toLowerCase()
 
-    let select1 = `../images/${input}-active1.gif`
-    let select2 = `../images/${input}-active2.gif`
-    let select3 = `../images/${input}-active3.gif`
+    let select1 = `./images/${input}-active1.gif`
+    let select2 = `./images/${input}-active2.gif`
+    let select3 = `./images/${input}-active3.gif`
 
     if(rollRound == 0){
         $("#player-img").prop(`src`, `${select1}`)
@@ -253,9 +253,9 @@ function playerActive(){
 function computerActive(){
     let i = $( "#select-computer option:selected" ).text();
     let input = i.toLowerCase()
-    let select1 = `../images/${input}-active1.gif`
-    let select2 = `../images/${input}-active2.gif`
-    let select3 = `../images/${input}-active3.gif`
+    let select1 = `./images/${input}-active1.gif`
+    let select2 = `./images/${input}-active2.gif`
+    let select3 = `./images/${input}-active3.gif`
     if(rollRound == 0){
         $("#computer-img").prop(`src`, `${select1}`)
     }

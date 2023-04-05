@@ -54,7 +54,7 @@ function playerSelection(){
     let i = $( "#select-player option:selected" ).text();
     let name = i.toUpperCase()
     let input = i.toLowerCase()
-    let select = `../images/${input}-idle.gif`
+    let select = `./images/${input}-idle.gif`
     $("#player-img").prop(`src`, `${select}`)
     $("#player-img").prop(`alt`, `${name}`)
     $("#player h2").html(`Player: <br>${name}`)
@@ -64,7 +64,7 @@ function computerSelection(){
     let i = $( "#select-computer option:selected" ).text();
     let name = i.toUpperCase()
     let input = i.toLowerCase()
-    let select = `../images/${input}-idle.gif`
+    let select = `./images/${input}-idle.gif`
     $("#computer-img").prop(`src`, `${select}`)
     $("#computer-img").prop(`alt`, `${name}`)
     $("#computer h2").html(`Computer: <br>${name}`)
@@ -73,28 +73,28 @@ function computerSelection(){
 function playerWinDisplay(){
     let i = $( "#select-player option:selected" ).text();
     let input = i.toLowerCase()
-    let select = `../images/${input}-victory.gif`
+    let select = `./images/${input}-victory.gif`
     $("#player-img").prop(`src`, `${select}`)
 }
 
 function playerLoseDisplay(){
     let i = $( "#select-player option:selected" ).text();
     let input = i.toLowerCase()
-    let select = `../images/${input}-lose.gif`
+    let select = `./images/${input}-lose.gif`
     $("#player-img").prop(`src`, `${select}`)
 }
 
 function computerWinDisplay(){
     let i = $( "#select-computer option:selected" ).text();
     let input = i.toLowerCase()
-    let select = `../images/${input}-victory.gif`
+    let select = `./images/${input}-victory.gif`
     $("#computer-img").prop(`src`, `${select}`)
 }
 
 function computerLoseDisplay(){
     let i = $( "#select-computer option:selected" ).text();
     let input = i.toLowerCase()
-    let select = `../images/${input}-lose.gif`
+    let select = `./images/${input}-lose.gif`
     $("#computer-img").prop(`src`, `${select}`)
 }
 
@@ -114,6 +114,6 @@ function setBG(){
 function themeSelection(){
     let i = $( "#theme option:selected" ).text();
     let input = i.toLowerCase()
-    let select = `url("../images/${input}-background.jpg")`
+    let select = `url("./images/${input}-background.jpg")`
     $("#versus").css(`background-image`, `${select}`)
 }
